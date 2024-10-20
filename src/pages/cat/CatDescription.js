@@ -9,10 +9,9 @@ export default function CatDescription (props) {
             Family Friendly: {props.family_friendly} out of 5<br />
             Playfulness: {props.playfulness} out of 5<br />
             Intelligence: {props.intelligence} out of 5<br />
-            Ideal Adult Weight: {props.max_weight} lbs. <br />
-            Max Life Expectancy: {props.max_life_expectancy} years. <br />
+            Ideal Adult Weight: {props.max_weight} lbs <br />
+            Max Life Expectancy: {props.max_life_expectancy} years <br />
             </p>
         </div>
     )
 }
-console.log()
