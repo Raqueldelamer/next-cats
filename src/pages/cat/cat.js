@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 // DEMO https://github.com/rmccrear/cats-cats-cats-demo/blob/fetch-demo/src/pages/cat.js
 
 const catData = {
-    
     "length": "Medium",
     "origin": "Saudi Arabia",
     "image_link": "https://api-ninjas.com/images/cats/arabian_mau.jpg",
@@ -22,8 +21,10 @@ const catData = {
     "min_life_expectancy": 12,
     "max_life_expectancy": 14,
     "name": "Arabian Mau"
-}
-
+    
+    }
+    console.log(catData);
+    
 export default function CatPage() {
     //const cat = catData;
     const [ cat, setCat ] = useState({});
@@ -42,19 +43,19 @@ export default function CatPage() {
             fetchCat();
         }, []);
 
-    return (
-        <div>
-            <div>
-                <h1 className="text-4xl">{cat.name}</h1>
-            </div>
-            <div>
-                <img src={cat.image_link} alt={cat.name} />
-            </div>
-            <div>
-                {`The ${cat.name} comes from ${cat.origin} `}
-            </div>
-        </div>
-    );
 
+        return (
+            <div>
+                <div>
+                    <h1 className="text-4xl">{cat.name}</h1>
+                </div>
+                <div>
+                    <img src={cat.image_link} alt={cat.name} />
+                </div>
+                <div>
+                    {`The ${cat.name} comes from ${cat.origin} `}
+                </div>
+            </div>
+        );
 
 }
