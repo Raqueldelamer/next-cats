@@ -28,25 +28,25 @@ const catData = {
 
     console.log(catData);
     
-export default function CatPage() {
-    //const cat = catData;
-    const [ cat, setCat ] = useState({});
-
-    async function fetchCat() {
-        const result = await fetch("https://api-ninjas.com/images/cats/russian_blue.jpg");
-        
-        const data = await result.json();
-        console.log(data);
-        
-        console.log(catData);
-
-        setCat(data);
-        }
-
-        useEffect(() => {
-            // runs async fetch here 
-            fetchCat();
-        }, []);
+    export default function CatPage() {
+        //const cat = catData;
+        const [ cat, setCat ] = useState({});
+    
+        async function fetchCat() {
+            const result = await fetch("https://api-ninjas.com/images/cats/russian_blue.jpg");
+            
+            const data = await result.json();
+            console.log(data);
+            
+            console.log(catData);
+    
+            setCat(data);
+            }
+    
+            useEffect(() => {
+                // runs async fetch here 
+                fetchCat();
+            }, []);
 
         return (
         
@@ -54,11 +54,11 @@ export default function CatPage() {
             <div className="bg-gray-300 p-6">
                 <div>
                 <h1 className="text-6xl font-mono font-bold text-center"><CatHeader /></h1><br />
-                <h1 className="text-6xl font-mono font-bold text-center mt-9">The {cat.name}</h1>
+                <h1 className="text-6xl font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
             <div className= "p-4 flex-col">
                     <center><div className="card size-96 flex justify-center items-center ">
-                    <img src={cat.image_link} alt={cat.name} />
+                    <img src= {cat.image_link} alt= {cat.name} />
                     </div> </center>
                 <div>
                     <h1 className="text-3xl font-bold text-center">::Breed Description::</h1> 
