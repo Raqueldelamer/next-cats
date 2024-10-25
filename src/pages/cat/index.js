@@ -8,7 +8,7 @@ const catData = {
     
     "length": "15 to 18 inches, not including tail",
     "origin": "Archangel Isles, Russia",
-    "image_link": "https://api-ninjas.com/images/cats/russian_blue.jpg",
+    "image_link": "https://cats-cats-cats-demo.deno.dev/cats/russian",
     "family_friendly": 4,
     "shedding": 4,
     "general_health": 4,
@@ -33,7 +33,7 @@ const catData = {
         const [ cat, setCat ] = useState({});
     
         async function fetchCat() {
-            const result = await fetch("https://api-ninjas.com/images/cats/russian_blue.jpg");
+            const result = await fetch("https://cats-cats-cats-demo.deno.dev/cats/russian");
             
             const data = await result.json();
             console.log(data);
@@ -51,18 +51,18 @@ const catData = {
         return (
         
     
-            <div className="bg-gray-300 p-6">
+            <div className="bg-gray-300 m-11">
                 <div>
                 <h1 className="text-6xl font-mono font-bold text-center"><CatHeader /></h1><br />
-                <h1 className="text-6xl font-mono font-bold text-center mt-9">The {cat.name} </h1>
+                <h1 className="text-5xl font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
             <div className= "p-4 flex-col">
-                    <center><div className="card size-96 flex justify-center items-center ">
+                    <center><div className="size-full p-11 flex justify-center items-center ">
                     <img src= {cat.image_link} alt= {cat.name} />
                     </div> </center>
                 <div>
-                    <h1 className="text-3xl font-bold text-center">::Breed Description::</h1> 
-                    <h2 className="text-center text-1xl font-bold"> 
+                    <h1 className="text-3xl font-bold text-center mt-3">::Breed Description::</h1> 
+                    <h2 className="text-center text-1xl font-bold mb-11"> 
                     The {cat.name} is native to {cat.origin} <br />
                     The {cat.name} intelligence score is: {cat.intelligence} out of 5. <br /> 
                     It's max life expectancy is {cat.max_life_expectancy} years.<br /> 
