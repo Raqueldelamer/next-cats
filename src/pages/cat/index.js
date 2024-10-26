@@ -50,14 +50,13 @@ const catData = {
 
         return (
         
-    
             <div className="bg-gray-300 m-11">
                 <div>
                 <h1 className="text-6xl font-mono font-bold text-center"><CatHeader /></h1><br />
                 <h1 className="text-5xl font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
-            <div className= "p-4 flex-col">
-                    <center><div className="size-full p-11 flex justify-center items-center ">
+                <div className= "p-4">
+                    <center><div className="size-full p-10 flex justify-center items-center ">
                     <img src= {cat.image_link} alt= {cat.name} />
                     </div> </center>
                 <div>
@@ -78,9 +77,3 @@ const catData = {
         );
 
 }
-
-
-
-
-
-
