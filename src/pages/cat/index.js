@@ -1,4 +1,5 @@
 import CatHeader from "./CatHeader";
+import CatImage from "./CatImage";
 import { useEffect, useState } from "react";
 
 
@@ -8,7 +9,7 @@ const catData = {
     
     "length": "15 to 18 inches, not including tail",
     "origin": "Archangel Isles, Russia",
-    "image_link": "https://cats-cats-cats-demo.deno.dev/cats/russian",
+    "image_link": "https://api-ninjas.com/images/cats/russian_blue.jpg",
     "family_friendly": 4,
     "shedding": 4,
     "general_health": 4,
@@ -47,18 +48,19 @@ const catData = {
                 // runs async fetch here 
                 fetchCat();
             }, []);
+    
+        console.log(cat.image_link);
+        const image = cat.image_link;
 
         return (
         
             <div className="bg-gray-300 m-11">
                 <div>
-                <h1 className="text-6xl font-mono font-bold text-center"><CatHeader /></h1><br />
+                <CatHeader />
                 <h1 className="text-5xl font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
                 <div className= "p-4">
-                    <center><div className="size-full p-10 flex justify-center items-center ">
-                    <img src= {cat.image_link} alt= {cat.name} />
-                    </div> </center>
+                <CatImage image_link= {image} />
                 <div>
                     <h1 className="text-3xl font-bold text-center mt-3">::Breed Description::</h1> 
                     <h2 className="text-center text-1xl font-bold mb-11"> 
