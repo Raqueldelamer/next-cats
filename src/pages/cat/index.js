@@ -58,7 +58,7 @@ const catData = {
             <div className="bg-gray-300 p-5">
                 <div>
                     <CatHeader />
-                <h1 className="text-5xl text-black font-mono font-bold text-center mt-9">The {cat.name} </h1>
+                    <h1 className="text-5xl text-black font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
                 <div className= "p-4">
                     <CatImage image_link= {image} />
