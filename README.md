@@ -45,7 +45,7 @@ Watch the video from the reading on how to handle errors and/or loading states. 
 
 Try to use a different API to fetch data. You can use any open API you like. (Avoid using API's with authentication for this exercise.)
 
-## Deploy on Vercel [x]
+## Deploy on Vercel [ ]
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
