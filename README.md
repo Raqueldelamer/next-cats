@@ -13,7 +13,8 @@ pnpm dev
 # or
 bun dev
 ```
-![Cat Image](cat/canva-cat.jpg)
+## WIREFRAME
+<img src="https://github.com/Raqueldelamer/next-cats/blob/cat2/src/pages/cat/canva-cat.jpg" > <br />
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
