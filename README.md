@@ -13,7 +13,7 @@ pnpm dev
 # or
 bun dev
 ```
-<img src="cat/canva-cat.jpg">
+![Cat Image](cat/canva-cat.jpg)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
