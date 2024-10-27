@@ -2,23 +2,34 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server: [x]
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 ## WIREFRAME
 <img src="https://github.com/Raqueldelamer/next-cats/blob/cat2/src/pages/cat/canva-cat.jpg" > <br />
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Fetching Data from an API [x]
+
+Fetching data from an API is a common task in web development. In this exercise, you will learn how to fetch data from an API and display it in your components using React hooks.
+
+The challenge will be using hooks like `useEffect` and `useState` to fetch data from an API. You will likely not understand the entire process at first, but that's okay. The goal is to expose yourself to React hooks. 
+
+Take notes, and bookmark the documentation you need. As you practice more, you will become more comfortable with these concepts.
+
+## Objective [x]
+
+Update your Cats Cats Cats project to access an API and display the data in your components.
+
+The API you will be using is here (you may change the breed to any breed you like):
+
+ [x]   https://cats-cats-cats-demo.deno.dev/cats/russian
+
+[x] Use the fetch API, useEffect, and useState to fetch the data and display it in your components.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
@@ -26,16 +37,15 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### Stretch Goal 2 Error handling or loading state [x]
 
-To learn more about Next.js, take a look at the following resources:
+Watch the video from the reading on how to handle errors and/or loading states. Implement this in your project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Stretch Goal 3 Custom API [x]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Try to use a different API to fetch data. You can use any open API you like. (Avoid using API's with authentication for this exercise.)
 
-## Deploy on Vercel
+## Deploy on Vercel [x]
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
