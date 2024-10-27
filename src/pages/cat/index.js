@@ -1,3 +1,4 @@
+import CatDescription from "./CatDescription";
 import CatHeader from "./CatHeader";
 import CatImage from "./CatImage";
 import { useEffect, useState } from "react";
@@ -54,23 +55,20 @@ const catData = {
 
         return (
         
-            <div className="bg-gray-300 m-11">
+            <div className="bg-gray-300 p-5">
                 <div>
-                <CatHeader />
-                <h1 className="text-5xl font-mono font-bold text-center mt-9">The {cat.name} </h1>
+                    <CatHeader />
+                <h1 className="text-5xl text-black font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
                 <div className= "p-4">
-                <CatImage image_link= {image} />
+                    <CatImage image_link= {image} />
                 <div>
-                    <h1 className="text-3xl font-bold text-center mt-3">::Breed Description::</h1> 
-                    <h2 className="text-center text-1xl font-bold mb-11"> 
-                    The {cat.name} is native to {cat.origin} <br />
-                    The {cat.name} intelligence score is: {cat.intelligence} out of 5. <br /> 
-                    It's max life expectancy is {cat.max_life_expectancy} years.<br /> 
-                    Family Friendly Score: {cat.family_friendly} out of 5.<br />
-                    Playfulness: {cat.playfulness} out of 5.<br />
-                    Max Adult Weight: {cat.max_weight} lbs. <br />
-                    </h2>
+                    <CatDescription name={cat.name} origin={cat.origin}
+                    intelligence={cat.intelligence} 
+                    max_life_expectancy={cat.max_life_expectancy}
+                    family_friendly={cat.family_friendly}
+                    playfulness={cat.playfulness} 
+                    max_weight={cat.max_weight} />
                 </div>
             </div>
             </div>
