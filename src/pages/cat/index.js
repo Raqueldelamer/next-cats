@@ -55,7 +55,7 @@ const catData = {
 
         return (
         
-            <div className="bg-gray-300 p-5">
+            <div className="bg-gray-300 p-10">
                 <div>
                     <CatHeader />
                     <h1 className="text-5xl text-black font-mono font-bold text-center mt-9">The {cat.name} </h1>
