@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+
 
 export default function CatIcon() {
 	return (
@@ -14,6 +14,3 @@ export default function CatIcon() {
     );
 }
 
-CatIcon.propTypes = {
-    iconSrc: PropTypes.string.isRequired
-};
