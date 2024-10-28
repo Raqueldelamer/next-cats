@@ -1,6 +1,8 @@
 import CatDescription from "./CatDescription";
 import CatHeader from "./CatHeader";
+import CatIcon from "./CatIcon";
 import CatImage from "./CatImage";
+import React from 'react';
 import { useEffect, useState } from "react";
 
 
@@ -54,10 +56,13 @@ const catData = {
         const image = cat.image_link;
 
         return (
-        
-            <div className="bg-gray-300 p-10">
-                <div>
+
+            <div className="bg-gray-300 p-10 text-1xl font-bold font mono text-black">
+                <div className="flex container">
+                    <CatIcon /><h3 className="ml-0">The Cat App!</h3>
+                </div>
                     <CatHeader />
+                <div>
                     <h1 className="text-5xl text-black font-mono font-bold text-center mt-9">The {cat.name} </h1>
                 </div>
                 <div className= "p-4">
@@ -72,7 +77,7 @@ const catData = {
                 </div>
             </div>
             </div>
-    
+
         
         );
 
