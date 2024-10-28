@@ -6,11 +6,11 @@ import CatHeader from "./CatHeader";
 export default function CatPage() {
 
     return (
-    <div className="bg-orange-200 p-6">
-        <h1 className="text-6xl font-mono font-bold text-center"><CatHeader /></h1><br />
-        <h2 className="text-4xl font-mono font-bold text-center">Hi, I'm an Abyssinian cat!</h2>;
+    <div className="bg-orange-200 text-black p-1">
+        <CatHeader /><br />
+        <h2 className="text-5xl font-mono font-bold text-center">Hi, I'm an {catData.name} cat!</h2>;
         <CatImage catData={catData} />;
-        <div className='mt-4 text-center'>
+        <div>
         <CatDescription origin= {catData.origin} 
         family_friendly={catData.family_friendly} 
         playfulness={catData.playfulness} 
