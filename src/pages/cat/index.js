@@ -2,7 +2,7 @@ import CatDescription from "./CatDescription";
 import CatHeader from "./CatHeader";
 import CatIcon from "./CatIcon";
 import CatImage from "./CatImage";
-import React from 'react';
+// import React from 'react';
 import { useEffect, useState } from "react";
 
 
