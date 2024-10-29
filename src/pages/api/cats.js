@@ -1,4 +1,6 @@
 // api key= sTkQ7XF9P/8HCVGiUe/2ng==S5tpQzOt6GIenFfn
+// api link w key = https://api.api-ninjas.com/v1/cats?&sTkQ7XF9P/8HCVGiUe/2ng%3D%3DS5tpQzOt6GIenFfn=key
+// more than 1 cat https://cats-cats-cats-demo.deno.dev/cats/p?multi_cat=true
 
 async function getCatData () {
     const url ="https://cats-cats-cats-demo.deno.dev/cats/abyssinian";
