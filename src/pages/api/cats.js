@@ -1,6 +1,8 @@
+// api key= sTkQ7XF9P/8HCVGiUe/2ng==S5tpQzOt6GIenFfn
+
 async function getCatData () {
-    const url ="https://cats-cats-cats-demo.deno.dev/cats/abyssinian";
-    const result = await fetch(url);
+    const apiUrl ="https://api.api-ninjas.com/v1/cats?&sTkQ7XF9P/8HCVGiUe/2ng%3D%3DS5tpQzOt6GIenFfn=key";
+    const result = await fetch(apiUrl);
     const data = await result.json();
     return data; 
 }
