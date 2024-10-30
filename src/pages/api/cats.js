@@ -26,7 +26,7 @@ export default async function handler(req, res) {
         responseData.max_weight = cat[1].max_weight;
         responseData.max_life_expectancy = cat[1].max_life_expectancy;
     } else {
-        responseData.error = "No Cats";
+        responseData.error = "Error No Cats";
     }
     res.status(200).json(responseData);  
     

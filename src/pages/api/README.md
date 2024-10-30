@@ -14,9 +14,11 @@
 <br>
 <br>
 
-- **Project Overview**: This project demonstrates my ability to fetch data using async functions that retrieve API data through an API route via an API url with an api-key that makes it possible to get a response for my secure data request.
+- ##Project Overview**: This project demonstrates my ability to fetch data using async functions that retrieve API data through an API route via an API url with an api-key that makes it possible to get a response for my secure data request.<br />
+![Nasa-Api]<img src="api/imgs/nasa-api.jpg"><br /><br />
+![Pokemon-Api]<img src="api/imgs/pokemon-api.jpg"><br /><br />
 
-- **Setup Instructions**: To run it locally, I enter **npm run dev** in the terminal and make sure that the endpoint connects to the local server. EX: http://localhost:3000/api/nasa<br />
+- ##Setup Instructions**: To run it locally, I enter **npm run dev** in the terminal and make sure that the endpoint connects to the local server. EX: http://localhost:3000/api/nasa<br />
 
-- **Endpoints**: ` http://localhost:3000/api/nasa` (nasa apod api image data), `http://localhost:3000/api/pokemon` =(pokemon api character data)= `http://localhost:3000/api/pokemon2` & `http://localhost:3000/api/cats` (cat breed api data).<br />
+- ##Endpoints**: ` http://localhost:3000/api/nasa` (nasa apod api image data), `http://localhost:3000/api/pokemon` =(pokemon api character data)= `http://localhost:3000/api/pokemon2` & `http://localhost:3000/api/cats` (cat breed api data).<br />
 
