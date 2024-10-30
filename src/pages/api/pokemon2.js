@@ -1,3 +1,4 @@
+
 async function getPokemonData () {
     const url ="https://pokeapi.co/api/v2/pokemon/mewtwo";
     const result = await fetch(url);

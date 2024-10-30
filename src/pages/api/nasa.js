@@ -1,5 +1,4 @@
 
-
 async function getNasaData () {
     const apiUrl ="https://api.nasa.gov/planetary/apod?api_key=qdKmIGSnIsK5iNoMCvpbQwkaWZuXIclEzQNe1E35" //api_key entered
     const result = await fetch(apiUrl);
