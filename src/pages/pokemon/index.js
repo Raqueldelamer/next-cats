@@ -5,12 +5,12 @@ export default function Pokemon() {
 
     async function fetchPokemon() {
         try {
-        const response = await fetch(`/api/pokemon/meowth`);
+        const response = await fetch(`/api/pokemon`);
         const data = await response.json();
         setPokemonData(data);
-        
+
     } catch (error) {
-        console.error('Error fetching Pokémon data:', error);
+        console.error('Error fetching Pokemon data:', error);
     }
     };
 
@@ -23,9 +23,22 @@ export default function Pokemon() {
     }
 
     return (
-    <div>
-        <h1>Pokémon Data</h1>
-        <p>Name: {pokemonData.name}</p>
+    <div class="bg-[url('/imgs/pokemon-bg.png')]">
+    <div class="card bg-white ml-16 mr-16">
+    <div class="col">
+        <h1 className="text-5xl text-black font-mono font-bold text-center">::Pokemon Data::</h1>
+        <p className= "text-1xl text-black font-bold text-center">Name: {pokemonData.pokemonName} <br />
+        First Ability: {pokemonData.firstAbility} <br />
+        Second Ability: {pokemonData.secondAbility} <br />
+        Cry URL: {pokemonData.pokemonCry} <br />
+        Image URL: {pokemonData.pokemonImgSrc} <br />
+        
+        </p>
     </div>
+    </div>
+    </div>
+    
+    
+    
     );
 }
