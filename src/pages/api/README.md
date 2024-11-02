@@ -10,6 +10,12 @@
 - [x] Create a README.md
 - [x] Include screenshots of the Postman requests for the APIs that use Postman authorization  (`/api/pokemon` & `/api/nasa`)
 - [ ] Add the link to your deployed project (e.g., `https://your-project-name.vercel.app`).
+## API Deployment links
+
+"https://next-cats-l96ehy555-raqueldelamers-projects.vercel.app/api/nasa <br />
+https://next-cats-l96ehy555-raqueldelamers-projects.vercel.app/api/pokemon <br />
+https://next-cats-l96ehy555-raqueldelamers-projects.vercel.app/api/cats <br />
+
 
 <br>
 <br>

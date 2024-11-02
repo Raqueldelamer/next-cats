@@ -11,6 +11,9 @@ async function getCatData () {
         headers: {'X-Api-Key': APIKEY}
     });
     const data = await result.json();
+    console.log("getCatData");
+    console.log(APIKEY);
+    console.log(data);
     return data; 
 }
 export default async function handler(req, res) {
