@@ -27,6 +27,8 @@ export default function Pokemon() {
     <div className="card py-72 shadow-sm bg-white opacity-85 ml-72 mr-72">
         <h1 className="text-5xl text-black font-mono font-bold text-center">::Pokemon Data::</h1><br />
         <p className= "text-1xl text-black font-bold text-center">Name: {pokemonData.pokemonName} <br />
+        ID: {pokemonData.id} <br />
+        Height: {pokemonData.height} <br />
         First Ability: {pokemonData.firstAbility} <br />
         Second Ability: {pokemonData.secondAbility} <br />
         Cry URL: {pokemonData.pokemonCry} <br />

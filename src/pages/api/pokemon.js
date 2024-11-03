@@ -14,6 +14,7 @@ export default async function handler(req, res) {
         pokemonImgSrc: pokemon.sprites.front_default,
         firstAbility: pokemon.abilities[0].ability.name,
         secondAbility: pokemon.abilities[1].ability.name,
-        height: pokemon.height
+        height: pokemon.height,
+        id: pokemon.id
     });
 }
