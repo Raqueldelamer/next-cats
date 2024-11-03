@@ -19,26 +19,21 @@ export default function Pokemon() {
     }, []);
 
     if (!pokemonData) {
-        return <div>Loading...</div>;
+        return <div>Loading Pokemon Data...</div>;
     }
 
     return (
-    <div class="bg-[url('/imgs/pokemon-bg.png')]">
-    <div class="card bg-white ml-16 mr-16">
-    <div class="col">
-        <h1 className="text-5xl text-black font-mono font-bold text-center">::Pokemon Data::</h1>
+    <body className="bg-[length:700px_600px] bg-[url('/imgs/pokemon-bg.jpg')]">
+    <div className="card py-72 shadow-sm bg-white opacity-85 ml-72 mr-72">
+        <h1 className="text-5xl text-black font-mono font-bold text-center">::Pokemon Data::</h1><br />
         <p className= "text-1xl text-black font-bold text-center">Name: {pokemonData.pokemonName} <br />
         First Ability: {pokemonData.firstAbility} <br />
         Second Ability: {pokemonData.secondAbility} <br />
         Cry URL: {pokemonData.pokemonCry} <br />
         Image URL: {pokemonData.pokemonImgSrc} <br />
-        
         </p>
     </div>
-    </div>
-    </div>
     
-    
-    
+    </body>
     );
 }
